@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint 3.5.2">
+
+    <issue
+        id="NotSibling"
+        severity="Fatal"
+        message="`@+id/et_user_conmment` is not a sibling in the same `ConstraintLayout`"
+        category="Correctness"
+        priority="6"
+        summary="Invalid Constraints"
+        explanation="Layout constraints in a given `ConstraintLayout` or `RelativeLayout` should reference other views within the same relative layout (but not itself!)"
+        errorLine1="        app:layout_constraintEnd_toEndOf=&quot;@+id/et_user_conmment&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\00.STUDY\Android\GOOD-JOB_2021-1106-1049 - google_playstore\app\src\main\res\layout\activity_login.xml"
+            line="51"
+            column="9"/>
+    </issue>
+
+</issues>

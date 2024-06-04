@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.stepjump.goodjob"
+    android:versionCode="5"
+    android:versionName="1.4" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="30" />
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 인터넷 권한선언 -->
+
+
+    <!-- <uses-permission android:name="android.permission.CAMERA" />&lt;!&ndash;카메라 권한&ndash;&gt; -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 파일 읽기 권한 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 파일 쓰기 권한 -->
+    <!-- <uses-feature android:name="android.hardware.camera" android:required="true"/>&lt;!&ndash;카메라 기능 사용&ndash;&gt; -->
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/goodjob_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/goodjob_icon_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity android:name="com.stepjump.goodjob.LoginActivity" >
+
+            <!-- LoginActivity 를 처음으로 실행하기 위해 필요 - S -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- LoginActivity 를 처음으로 실행하기 위해 필요 - E -->
+
+        </activity>
+        <activity android:name="com.stepjump.goodjob.RegisterActivity" />
+        <activity android:name="com.stepjump.goodjob.RegisterUpdateActivity" />
+        <activity android:name="com.stepjump.goodjob.MainActivity" />
+        <activity android:name="com.stepjump.goodjob.ListModifyActivity" />
+        <activity android:name="com.stepjump.goodjob.ListActivity" />
+        <activity android:name="com.stepjump.goodjob.ListActivity1" />
+        <activity android:name="com.stepjump.goodjob.ListActivity2" />
+        <activity android:name="com.stepjump.goodjob.MainActivity2" />
+        <activity android:name="com.stepjump.goodjob.AdminActivity" />
+        <activity android:name="com.stepjump.goodjob.Main_PassActivity" />
+        <activity android:name="com.stepjump.goodjob.ListViewItem1" />
+        <activity android:name="com.stepjump.goodjob.ListViewItem2" />
+        <activity android:name="com.stepjump.goodjob.OpenActivity" />
+
+        <!-- <provider -->
+        <!-- android:name="android.support.v4.content.FileProvider" -->
+        <!-- android:authorities="com.shuvic.alumni.cameraalbum" -->
+        <!-- android:exported="false" -->
+        <!-- android:grantUriPermissions="true"> -->
+        <!-- <meta-data -->
+        <!-- android:name="android.support.FILE_PROVIDER_PATHS" -->
+        <!-- android:resource="@xml/file_paths" /> -->
+        <!-- </provider> -->
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.stepjump.goodjob.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name="com.gun0912.tedpermission.TedPermissionActivity"
+            android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|screenLayout|fontScale|uiMode|orientation|screenSize|layoutDirection"
+            android:screenOrientation="unspecified"
+            android:theme="@style/Theme.Transparent.Permission" />
+    </application>
+
+</manifest>
