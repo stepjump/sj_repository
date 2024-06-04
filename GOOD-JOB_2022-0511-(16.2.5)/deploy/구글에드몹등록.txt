@@ -1,0 +1,14 @@
+
+com.stepjump.goodjob
+
+
+app-ads.txt를 설정합니다. app-ads.txt 파일이 이미 있다면 개발 웹사이트를 포함하도록 스토어 등록정보를 업데이트하세요. app-ads.txt 파일이 아직 없다면 IAB Tech Lab에서 제공하는 사양을 사용하여 파일을 만드세요. app-ads.txt에 대해 자세히 알아보기
+
+
+앱id     ca-app-pub-9164372688722543~3081471673
+광고단위id   ca-app-pub-9164372688722543/3988849928
+테스트 단위ID 배너   ca-app-pub-3940256099942544/6300978111
+
+
+구글블로그
+stepjump1.blogspot.com

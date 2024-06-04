@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#000000"
+    android:layout_margin="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tableLayout2">
+
+
+
+    <TableRow android:background="#FFFFFF"
+        android:gravity="center"
+        tools:layout_conversion_absoluteHeight="40dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_height="wrap_content"
+        tools:layout_conversion_absoluteWidth="371dp"
+        android:layout_width="wrap_content">
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:background="#3F51B5"
+            android:drawableTop="@android:drawable/ic_menu_edit"
+            android:text="등록하기"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </TableRow>
+
+
+    <TableRow android:background="#FFFFFF"
+        tools:layout_conversion_absoluteHeight="19dp"
+        tools:layout_editor_absoluteY="41dp"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_height="wrap_content"
+        tools:layout_conversion_absoluteWidth="371dp"
+        android:layout_width="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="" />
+    </TableRow>
+
+
+    <TableRow android:background="#FFFFFF"
+        android:gravity="center"
+        tools:layout_conversion_absoluteHeight="27dp"
+        tools:layout_editor_absoluteY="60dp"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_height="wrap_content"
+        tools:layout_conversion_absoluteWidth="371dp"
+        android:layout_width="wrap_content">
+
+        <Button
+            android:id="@+id/btn_query"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="1"
+            android:background="#FF5722"
+            android:drawableTop="@android:drawable/ic_input_get"
+            android:text="수입 내역보기"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="1"
+            android:background="#FFC107"
+            android:drawableTop="@drawable/abc_vector_test"
+            android:text="처음으로 가기"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </TableRow>
+
+   <TableRow android:background="#FFFFFF"
+       tools:layout_conversion_absoluteHeight="19dp"
+       tools:layout_editor_absoluteY="87dp"
+       tools:layout_editor_absoluteX="0dp"
+       android:layout_height="wrap_content"
+       tools:layout_conversion_absoluteWidth="371dp"
+       android:layout_width="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="" />
+    </TableRow>
+
+    <TableRow android:background="#FFFFFF"
+        tools:layout_conversion_absoluteHeight="40dp"
+        tools:layout_editor_absoluteY="108dp"
+        tools:layout_editor_absoluteX="1dp"
+        android:layout_height="wrap_content"
+        tools:layout_conversion_absoluteWidth="369dp"
+        android:layout_width="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#001AFF"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="오늘 심부름 수입금액" />
+        <TextView
+            android:id="@+id/txt_today_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#001AFF"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:text="" />
+    </TableRow>
+
+    <TableRow android:background="#FFFFFF"
+        tools:layout_conversion_absoluteHeight="40dp"
+        tools:layout_editor_absoluteY="150dp"
+        tools:layout_editor_absoluteX="1dp"
+        android:layout_height="wrap_content"
+        tools:layout_conversion_absoluteWidth="369dp"
+        android:layout_width="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#FFFF0000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="결제해야할 심부름값" />
+        <TextView
+            android:id="@+id/txt_total_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#FFFF0000"
+            android:text="" />
+    </TableRow>
+
+
+
+
+    <TableRow android:background="#FFFFFF"
+        tools:layout_conversion_absoluteHeight="30dp"
+        tools:layout_editor_absoluteY="193dp"
+        tools:layout_editor_absoluteX="1dp"
+        android:layout_height="wrap_content"
+        tools:layout_conversion_absoluteWidth="369dp"
+        android:layout_width="wrap_content">
+
+        <Button
+            android:id="@+id/btn_sel_datebutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3F51B5"
+            android:drawableLeft="@android:drawable/ic_dialog_dialer"
+            android:onClick="OnClickHandler_date"
+            android:text="날짜 선택하기"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_date"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="착한일한 날짜"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </TableRow>
+
+
+    <TableRow android:background="#FFFFFF"
+        tools:layout_conversion_absoluteHeight="27dp"
+        tools:layout_editor_absoluteY="225dp"
+        tools:layout_editor_absoluteX="1dp"
+        android:layout_height="wrap_content"
+        tools:layout_conversion_absoluteWidth="369dp"
+        android:layout_width="wrap_content">
+
+        <Button
+            android:id="@+id/btn_sel_activebutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#009688"
+            android:drawableLeft="@android:drawable/btn_star_big_on"
+            android:text="착한일 선택하기"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/textView_active"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="left"
+        android:singleLine="false"
+        android:text="착한일 목록"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        tools:layout_conversion_absoluteHeight="250dp"
+        tools:layout_editor_absoluteY="254dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_conversion_absoluteWidth="369dp" />
+
+</TableLayout>
+
+
+

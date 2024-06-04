@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.stepjump.goodjob.RegisterUpdateActivity">
+
+
+    <Button
+        android:id="@+id/btn_register_update"
+        android:layout_width="130dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="30dp"
+        android:background="#C6CCCB"
+        android:drawableLeft="@android:drawable/ic_menu_myplaces"
+        android:text="회원정보변경"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="130dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:background="#3F51B5"
+        android:drawableLeft="@drawable/abc_vector_test"
+        android:text="돌아가기"
+        app:layout_constraintEnd_toEndOf="@+id/btn_register_update"
+        app:layout_constraintStart_toStartOf="@+id/btn_register_update"
+        app:layout_constraintTop_toBottomOf="@+id/btn_register_update" />
+
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="8dp"
+        android:ems="6"
+        android:hint="아이디"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:ems="6"
+        android:hint="로그인 비밀번호"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_id"
+        app:layout_constraintStart_toStartOf="@+id/et_id"
+        app:layout_constraintTop_toBottomOf="@+id/et_id" />
+
+    <EditText
+        android:id="@+id/et_admin_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:ems="6"
+        android:hint="관리자 비밀번호"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_pass"
+        app:layout_constraintStart_toStartOf="@+id/et_pass"
+        app:layout_constraintTop_toBottomOf="@+id/et_pass" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:ems="6"
+        android:hint="이름"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_admin_pass"
+        app:layout_constraintStart_toStartOf="@+id/et_admin_pass"
+        app:layout_constraintTop_toBottomOf="@+id/et_admin_pass" />
+
+    <EditText
+        android:id="@+id/et_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:ems="6"
+        android:hint="나이"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_name"
+        app:layout_constraintStart_toStartOf="@+id/et_name"
+        app:layout_constraintTop_toBottomOf="@+id/et_name" />
+
+    <EditText
+        android:id="@+id/et_user_conmment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:ems="15"
+        android:hint="사용자 설명(ex.귀여운 우리아이)"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_age"
+        app:layout_constraintStart_toStartOf="@+id/et_age"
+        app:layout_constraintTop_toBottomOf="@+id/et_age" />
+
+
+    <CheckBox
+        android:id="@+id/chkbox_join_agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text=" 개인정보 수집 및 이용에 대한 약관에 동의합니다."
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="441dp"
+        app:layout_constraintEnd_toEndOf="@+id/et_user_conmment"
+        app:layout_constraintStart_toStartOf="@+id/et_user_conmment"
+        app:layout_constraintTop_toBottomOf="@+id/et_user_conmment" />
+
+    <Button
+        android:id="@+id/btn_agree_view"
+        android:layout_width="122dp"
+        android:layout_height="39dp"
+        android:background="#C6CCCB"
+        android:drawableLeft="@android:drawable/ic_dialog_info"
+        android:text="약관보기"
+        app:layout_constraintEnd_toEndOf="@+id/chkbox_join_agree"
+        app:layout_constraintStart_toStartOf="@+id/chkbox_join_agree"
+        app:layout_constraintTop_toBottomOf="@+id/chkbox_join_agree" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

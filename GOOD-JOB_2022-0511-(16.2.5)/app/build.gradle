@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion "30.0.2"
+    defaultConfig {
+        applicationId "com.stepjump.goodjob"
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 16
+        versionName "2.5"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.google.android.gms:play-services-ads-lite:20.5.0'
+/*서버통신에 필요한 라이브러리 설치, 전송과 다운로드*/
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation 'androidx.preference:preference:1.1.1'
+
+    dependencies { implementation 'com.github.yukuku:ambilwarna:2.0.1' }
+
+    implementation 'gun0912.ted:tedpermission:2.2.3'//권한 요청을 위한 팝업을 쉽게 구성하기 위해
+
+    implementation 'com.google.android.gms:play-services-ads:20.5.0'    // 에드몹 광고
+}

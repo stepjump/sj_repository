@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#000000"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="*">
+<!--    모든 열 너비 늘이기 android:stretchColumns="*" -->
+
+
+
+
+    <TableRow android:background="#FFFFFF"
+        android:layout_margin="3dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="날짜"
+            android:textSize="20dp"
+            android:textColor="#3F51B5"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="날짜"
+            android:id="@+id/txt_date"
+            android:textSize="15dp"
+            android:textColor="#4CAF50"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+
+    </TableRow>
+
+
+    <TableRow android:background="#FFFFFF"
+        android:layout_margin="1dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="아침온도(℃)"
+            android:textSize="20dp"
+            android:textColor="#3F51B5"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/txt_temp1"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+
+    </TableRow>
+
+
+    <TableRow android:background="#FFFFFF"
+        android:layout_margin="1dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="저녁온도(℃)"
+            android:textSize="20dp"
+            android:textColor="#3F51B5"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/txt_temp2"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+
+    </TableRow>
+
+
+    <TableRow android:background="#FFFFFF"
+        android:layout_margin="1dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="밤온도(℃)"
+            android:textSize="20dp"
+            android:textColor="#3F51B5"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/txt_temp3"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+
+    </TableRow>
+
+    <TableRow android:background="#FFFFFF"
+        android:layout_margin="1dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="키,신장(cm)"
+            android:textSize="20dp"
+            android:textColor="#3F51B5"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/txt_height"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+
+    </TableRow>
+
+
+    <TableRow android:background="#FFFFFF"
+        android:layout_margin="1dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="몸무게(kg)"
+            android:textSize="20dp"
+            android:textColor="#3F51B5"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/txt_weight"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+
+    </TableRow>
+
+
+    <TableRow android:background="#FFFFFF"
+        android:layout_margin="1dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="다른 적을 내용"
+            android:textSize="20dp"
+            android:textColor="#3F51B5"
+            android:textStyle="bold"
+            android:layout_span="2"
+            android:layout_gravity="center"
+            android:layout_weight="0" />
+
+    </TableRow>
+
+
+    <TableRow android:background="#FFFFFF"
+        android:layout_margin="1dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/txt_etc_comment"
+            android:textSize="15dp"
+            android:textColor="#F44336"
+            android:textStyle="bold"
+            android:layout_span="2"
+            android:layout_weight="1" />
+
+    </TableRow>
+
+</TableLayout>

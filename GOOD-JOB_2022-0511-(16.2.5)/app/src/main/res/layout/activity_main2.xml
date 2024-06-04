@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TableLayout
+        android:background="#000000"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btn_sel_datebutton"
+        android:layout_width="206dp"
+        android:layout_height="37dp"
+        android:background="#3F51B5"
+        android:drawableLeft="@android:drawable/ic_dialog_dialer"
+        android:onClick="OnClickHandler_date"
+        android:text="날짜 선택하기"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_date"
+        android:layout_width="163dp"
+        android:layout_height="45dp"
+        android:hint="날짜"
+        android:text=""
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+        <TableRow
+            android:id="@+id/tablerow_4"
+            android:layout_width="371dp"
+            android:layout_margin="1dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/txt_temp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#009688"
+                android:text="   (아침) 온도(℃)"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_temp1"
+                android:layout_width="201dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="온도 입력"
+                android:inputType="numberDecimal"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+
+
+    <TableRow android:background="#FFFFFF"
+        android:layout_margin="1dp"
+        android:id="@+id/tablerow_5">
+
+        <TextView
+            android:id="@+id/txt_temp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#009688"
+            android:text="   (점심) 온도(℃)"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_temp2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:inputType="numberDecimal"
+            android:hint="온도 입력" />
+    </TableRow>
+
+
+    <TableRow android:background="#FFFFFF"
+        android:layout_margin="1dp"
+        android:id="@+id/tablerow_6">
+
+        <TextView
+            android:id="@+id/txt_temp3"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:background="#009688"
+            android:text="   (저녁) 온도(℃)    "
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_temp3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:inputType="numberDecimal"
+            android:hint="온도 입력" />
+    </TableRow>
+
+    <TableRow android:background="#FFFFFF"
+        android:layout_margin="1dp"
+        android:id="@+id/tablerow_7">
+
+        <TextView
+            android:id="@+id/txt_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#009688"
+            android:text="       키,신장(cm)    "
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:inputType="numberDecimal"
+            android:hint="키,신장(cm)" />
+    </TableRow>
+
+    <TableRow android:background="#FFFFFF"
+        android:layout_margin="1dp"
+        android:id="@+id/tablerow_8">
+
+        <TextView
+            android:id="@+id/txt_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#009688"
+            android:text="       몸무게(kg)    "
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:inputType="numberDecimal"
+            android:hint="몸무게(kg)" />
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/tablerow_82"
+        android:layout_height="85dp"
+        android:layout_margin="1dp"
+        android:background="#FFFFFF">
+
+        <Button
+            android:id="@+id/btn_reg_comment"
+            android:layout_width="345dp"
+            android:layout_height="36dp"
+            android:layout_span="12"
+            android:background="#009688"
+            android:drawableLeft="@android:drawable/ic_menu_edit"
+            android:gravity="center"
+            android:text="다른 적을내용 입력   (누르세요...)"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+    </TableRow>
+
+
+    <EditText
+        android:id="@+id/edit_comment"
+        android:layout_width="195dp"
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        android:enabled="false"
+        android:gravity="left"
+        android:hint="다른 적을 내용"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+
+    <TableRow android:background="#FFFFFF"
+        android:layout_margin="0dp"
+        android:gravity="center"
+        android:id="@+id/tablerow_1">
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="371dp"
+            android:layout_height="match_parent"
+            android:layout_span="12"
+            android:background="#3F51B5"
+            android:drawableTop="@android:drawable/ic_menu_edit"
+            android:text="등록하기"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </TableRow>
+
+
+    <TableRow android:background="#FFFFFF"
+        android:layout_margin="0dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="" />
+    </TableRow>
+
+
+    <TableRow android:background="#FFFFFF"
+        android:layout_margin="0dp"
+        android:gravity="center"
+        android:id="@+id/tablerow_9">
+
+        <Button
+            android:id="@+id/btn_query"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_span="1"
+            android:background="#FF5722"
+            android:drawableTop="@drawable/presence_away"
+            android:text="열온도 내역보기"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="146dp"
+            android:layout_height="64dp"
+            android:layout_span="1"
+            android:background="#FFC107"
+            android:drawableTop="@drawable/abc_vector_test"
+            android:text="처음으로 가기"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+
+
+</TableLayout>
+
+</ScrollView>
+

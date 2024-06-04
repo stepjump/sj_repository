@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context="com.stepjump.goodjob.ListActivity2"
+    tools:showIn="@layout/activity_list2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_sel_fdate"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:onClick="OnClickHandler_sel_fdate"
+                android:text="조회시작일 선택"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="#3F51B5" />
+
+            <TextView
+                android:id="@+id/textView_fdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="조회시작일"
+                android:textSize="22dp"
+                android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_sel_tdate"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:onClick="OnClickHandler_sel_tdate"
+            android:text="조회종료일 선택"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#3F51B5" />
+
+        <TextView
+            android:id="@+id/textView_tdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="조회종료일"
+            android:textSize="22dp"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_query"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:background="#FFC107"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="5"
+            android:text="조회하기" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:background="#3F51B5"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="5"
+            android:text="돌아가기" />
+
+    </LinearLayout>
+
+
+
+
+    <ListView
+        android:id="@+id/listview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbarSize="20dp"
+        android:fastScrollEnabled="true"
+
+        />
+
+
+</LinearLayout>

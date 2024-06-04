@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context="com.stepjump.goodjob.ListActivity"
+    tools:showIn="@layout/activity_list"
+    android:orientation="vertical">
+
+
+
+
+
+    <ListView
+        android:id="@+id/listview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:choiceMode="multipleChoice"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:text="착한일 목록을 선택후 착한일 추가하기 버튼을 눌러 등록해 주세요~!!"
+        android:background="#FFFFFF"
+        android:textColor="#012CAE"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:text="착한일 목록은 [ADMIN]-[착한일 목록 수정] 에서 추가,수정해 주세요~!!"
+        android:background="#FFFFFF"
+        android:textColor="#012CAE"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_addlist"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_span="0"
+            android:drawableLeft="@drawable/change_memeberinfo_image"
+            android:text="ADMIN"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:textSize="15dp"
+            android:textColor="#FFFFFF"
+            android:background="#009688"
+            android:hint="관리자 전용"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="착한일 추가하기" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:background="#3F51B5"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_weight="5"
+            android:text="돌아가기" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:text="[관리자전용 메뉴 알림]"
+        android:background="#FFFFFF"
+        android:textColor="#FA1403"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:text="[착한일 목록추가] 및 [수정] 은 [회원가입] 시 입력한 "
+        android:background="#FFFFFF"
+        android:textColor="#3F51B5"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:text="[관리자 암호]로 [메인페이지]-[ADMIN]-[착한일목록수정] 에"
+        android:background="#FFFFFF"
+        android:textColor="#3F51B5"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:text="들어가서 수정."
+        android:background="#FFFFFF"
+        android:textColor="#3F51B5"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+
+
+</LinearLayout>
