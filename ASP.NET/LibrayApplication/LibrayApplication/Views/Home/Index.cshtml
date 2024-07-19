@@ -1,0 +1,108 @@
+﻿@using LibraryApplication.Library
+@model IEnumerable<LibrayApplication.Models.Book>
+
+@{
+    ViewBag.Title = "Index";
+    int pageNum = ViewBag.Page ?? 1;
+    int totalCount = ViewBag.TotalCount ?? 0;
+    int maxListCount = ViewBag.MaxListCount ?? 1;
+    int totalPageCount = Convert.ToInt32(Math.Ceiling((double)totalCount / maxListCount));
+    var commonLib = new CommonLibrary();
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Writer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Summary)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Publisher)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Published_date)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @item.Title
+            </td>
+            <td>
+                @item.Writer
+            </td>
+            <td>
+                @item.Summary
+            </td>
+            <td>
+                @item.Publisher
+            </td>
+            <td>
+                @item.Published_date
+            </td>
+            <td>
+                <a href="/Home/Edit/@item.Book_U">수정</a>
+                <a href="/Home/Details/@item.Book_U">상세</a>
+                <a href="/Home/Delete/@item.Book_U">삭제</a>
+            </td>
+        </tr>
+    }
+
+</table>
+
+<form style="width:360px;float:left;">
+
+    @{ 
+        string[] exceptKeys = new string[] { "searchKind", "keyword", "page" };
+    }
+
+    @foreach (var item in commonLib.UrlParameters)
+    {
+        if (!exceptKeys.Contains(item.Key))
+        {
+            <input type="hidden" name="@item.Key" value="@item.Value" />
+        }
+
+    }
+
+    <div class="input-group">
+        <span class="input-group-addon">
+            <select name="searchKind">
+                <option value="Title" @(ViewBag.SearchKind == "Title" ? "selected" : "")>제목</option>
+                <option value="Writer" @(ViewBag.SearchKind == "Writer" ? "selected" : "")>저자</option>
+                <option value="Publisher" @(ViewBag.SearchKind == "Publisher" ? "selected" : "")>출판사</option>
+            </select>
+        </span>
+
+        <input class="form-control" type="text" name="keyword" value="@ViewBag.Keyword" />
+        <span class="input-group-btn">
+            <button class="btn btn-info" type="submit">검색</button>
+        </span>
+    </div>
+</form>
+
+<div class="text-right">
+    <div class="btn-group">
+        @for (int i = 1; i <= totalPageCount; i++)
+        {
+            <a class="btn btn-@(pageNum == i ? "primary" : "default")" href="@commonLib.AddUrlParameter("page",i.ToString())">@i</a>
+        }
+    </div>
+</div>
+
+
+
+

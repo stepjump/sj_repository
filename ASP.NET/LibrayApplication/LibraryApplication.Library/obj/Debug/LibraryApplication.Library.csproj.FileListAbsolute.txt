@@ -1,0 +1,12 @@
+D:\ASP.NET\LibrayApplication\LibraryApplication.Library\bin\Debug\LibraryApplication.Library.dll
+D:\ASP.NET\LibrayApplication\LibraryApplication.Library\bin\Debug\LibraryApplication.Library.pdb
+D:\ASP.NET\LibrayApplication\LibraryApplication.Library\obj\Debug\LibraryApplication.Library.csprojAssemblyReference.cache
+D:\ASP.NET\LibrayApplication\LibraryApplication.Library\obj\Debug\LibraryApplication.Library.csproj.CoreCompileInputs.cache
+D:\ASP.NET\LibrayApplication\LibraryApplication.Library\obj\Debug\LibraryApplication.Library.dll
+D:\ASP.NET\LibrayApplication\LibraryApplication.Library\obj\Debug\LibraryApplication.Library.pdb
+C:\STUDY\ASP.NET\LibrayApplication\LibraryApplication.Library\bin\Debug\LibraryApplication.Library.dll
+C:\STUDY\ASP.NET\LibrayApplication\LibraryApplication.Library\bin\Debug\LibraryApplication.Library.pdb
+C:\STUDY\ASP.NET\LibrayApplication\LibraryApplication.Library\obj\Debug\LibraryApplication.Library.csprojAssemblyReference.cache
+C:\STUDY\ASP.NET\LibrayApplication\LibraryApplication.Library\obj\Debug\LibraryApplication.Library.csproj.CoreCompileInputs.cache
+C:\STUDY\ASP.NET\LibrayApplication\LibraryApplication.Library\obj\Debug\LibraryApplication.Library.dll
+C:\STUDY\ASP.NET\LibrayApplication\LibraryApplication.Library\obj\Debug\LibraryApplication.Library.pdb
